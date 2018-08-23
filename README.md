@@ -1,4 +1,4 @@
-#WBlurView文档
+#WContentLayout文档
 ####使用方法：
 
 ```groovy
