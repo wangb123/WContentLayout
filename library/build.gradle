@@ -49,7 +49,7 @@ repositories {
 
 publish {
     artifactId = 'contentlayout'
-    publishVersion = '0.0.2'
+    publishVersion = '0.0.3'
     desc = 'Contentlayout'
     userOrg = rootProject.ext.pub_user
     groupId = rootProject.ext.pub_group

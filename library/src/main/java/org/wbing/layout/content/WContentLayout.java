@@ -211,27 +211,29 @@ public class WContentLayout extends FrameLayout {
         return this;
     }
 
-    public void showLoading() {
-        show(mLoadingResId);
+    public View showLoading() {
+        return show(mLoadingResId);
     }
 
-    public void showEmpty() {
-        show(mEmptyResId);
+    public View showEmpty() {
+        return show(mEmptyResId);
     }
 
-    public void showError() {
-        show(mErrorResId);
+    public View showError() {
+        return show(mErrorResId);
     }
 
-    public void showContent() {
-        show(mContentId);
+    public View showContent() {
+        return show(mContentId);
     }
 
-    private void show(int layoutId) {
+    private View show(int layoutId) {
         for (View view : mLayouts.values()) {
             view.setVisibility(GONE);
         }
-        layout(layoutId).setVisibility(VISIBLE);
+        View view = layout(layoutId);
+        view.setVisibility(VISIBLE);
+        return view;
     }
 
     private void remove(int layoutId) {
