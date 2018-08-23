@@ -1,0 +1,6 @@
+<resources>
+    <string name="w_content_name">WViewLoading</string>
+    <string name="w_content_empty_text">暂无数据</string>
+    <string name="w_content_error_text">无网络连接，请检查您的网络...</string>
+    <string name="w_content_retry_text">加载失败，点击重试~~</string>
+</resources>

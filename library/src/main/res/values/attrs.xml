@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="WContentLayoutStyle" format="reference" />
+
+    <style name="WContentLayout">
+
+    </style>
+
+    <style name="WContentLayout.Style">
+        <item name="w_content_EmptyResId">@layout/w_content_layout_empty</item>
+        <item name="w_content_LoadingResId">@layout/w_content_layout_loading</item>
+        <item name="w_content_ErrorResId">@layout/w_content_layout_error</item>
+
+        <item name="w_content_TextColor">#999999</item>
+        <item name="w_content_TextSize">16sp</item>
+
+        <item name="w_content_ButtonTextColor">#999999</item>
+        <item name="w_content_ButtonTextSize">16sp</item>
+        <item name="w_content_ButtonBackground">@drawable/w_content_layout_button</item>
+
+        <item name="w_content_EmptyImage">@null</item>
+        <item name="w_content_EmptyText">@string/w_content_empty_text</item>
+        <item name="w_content_ErrorImage">@null</item>
+        <item name="w_content_ErrorText">@string/w_content_error_text</item>
+        <item name="w_content_RetryText">@string/w_content_retry_text</item>
+    </style>
+
+
+    <declare-styleable name="WContentLayout">
+        <!-- 空布局资源id -->
+        <attr name="w_content_EmptyResId" format="reference" />
+        <!-- 加载中布局资源id -->
+        <attr name="w_content_LoadingResId" format="reference" />
+        <!-- 错误布局资源id -->
+        <attr name="w_content_ErrorResId" format="reference" />
+
+        <!-- 空布局图片 -->
+        <attr name="w_content_EmptyImage" format="reference" />
+        <!-- 空布局文本 -->
+        <attr name="w_content_EmptyText" format="string" />
+
+        <!-- 错误布局图片 -->
+        <attr name="w_content_ErrorImage" format="reference" />
+        <!-- 错误布局文本 -->
+        <attr name="w_content_ErrorText" format="string" />
+        <!-- 错误布局重试按钮文本 -->
+        <attr name="w_content_RetryText" format="string" />
+
+        <!-- 文本颜色 -->
+        <attr name="w_content_TextColor" format="color" />
+        <!-- 文本尺寸 -->
+        <attr name="w_content_TextSize" format="dimension" />
+
+        <!-- 按钮文本颜色 -->
+        <attr name="w_content_ButtonTextColor" format="color" />
+        <!-- 按钮文本尺寸 -->
+        <attr name="w_content_ButtonTextSize" format="dimension" />
+        <!-- 按钮背景 -->
+        <attr name="w_content_ButtonBackground" format="reference" />
+    </declare-styleable>
+</resources>
